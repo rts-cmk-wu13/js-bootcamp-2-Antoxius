@@ -1,8 +1,23 @@
-function sjulElementViaCssSelector(cssSelector) {
+function skjulElementViaCssSelector(cssSelector) {
   let element = document.querySelector(cssSelector);
-  if (element !== null) {
+  skjulElement(element);
+}
+
+function skjulElementerViaCssSelector(cssSelector) {
+  let elements = document.querySelectorAll(cssSelector);
+  elements.forEach(function (element) {
+    skjulElement(element);
+  });
+}
+
+if (element !== null) {
+  element.style.display = "none";
+}
+
+function skjulElement(element) {
+  if (element != null) {
     element.style.display = "none";
   }
 }
 
-sjulElementViaCssSelector(".produkt");
+skjulElementerViaCssSelector(".produkt");
