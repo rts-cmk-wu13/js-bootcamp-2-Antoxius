@@ -51,3 +51,7 @@ label {
 #my-button:focus {
 	outline: none;
 }
+
+#my-button.clicked {
+	background-color: #ff69b4;
+}

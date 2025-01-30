@@ -52,3 +52,7 @@ label {
 #buttons button:focus {
 	outline: none;
 }
+
+.button_color{
+	color: red;
+}
